@@ -7,10 +7,17 @@ p {
   font-size: 20px;
 }
 
+a {
+  font-size: 20px;
+}
+
+h1 {
+  color: rgb(255 255 255);
+}
+
 header {
   bottom: 20px;
   background-color: rgb(244 79 79);
-  color: rgb(255 255 255);
   text-align: center;
 }
 
@@ -25,19 +32,17 @@ main {
 }
 
 .contents {
-  flex-basis: 25%;
   border: 3px solid rgb(238 204 204); 
+  flex-basis: 25%;
   align-items: center;
   margin: 10px 15px ;
   padding: 20px 0px ;
-  width: 20%;
 }
 
-.umbrella {
-   color: rgb(97 206 249);
-   font-weight: bold;
+.content p:nth-of-type(2)::first-letter {
+  font-weight: bold;
+  color:rgb(97 206 249)
 }
-
 
 img {
   margin: 10px 0px ;
@@ -74,12 +79,12 @@ a:visited {
   color: rgb(193 234 251);
   }
 
-  @media screen and (max-width:768px){
+  @media screen and (max-width:768px) {
     #parent{
       display: block;
     }
     h2 {
-      font-size: 20px;
+      font-size: 30px;
     }
     p {
       font-size: 25px;

@@ -1,0 +1,135 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 18px;
+}
+
+
+/* ヘッダー */
+.header-inner {
+ display: flex;
+ justify-content: space-around;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+.header-inner a {
+  color: black;
+  text-decoration: none;
+  
+}
+
+
+h1 {
+ border: 1px solid black;
+
+}
+
+
+nav li {
+  list-style: none;
+  display: inline;
+  margin: 0 20px;
+  line-height: 70px;
+  
+  
+}
+
+nav a {
+  font-size: 34px;
+}
+
+
+/* メイン画像 */
+img {
+  width: 100%;
+  margin: 10px;
+}
+
+/* 真ん中の文字 */
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* セクションアバウト */
+.about-inner {
+  display: flex;
+  margin-left: 300px;
+}
+
+.name {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.contents {
+ margin: 100px;
+}
+
+
+/* 顔写真 */
+.picture {
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+}
+
+.works-inner {
+  max-width: 960px;
+  display: flex;
+  margin: 0 auto;
+  
+} 
+
+.item {
+  width: 300px;
+  margin: 20px;
+  
+}
+
+
+
+/* フッター */
+footer p {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* スマホ用スタイル */
+@media (max-width: 767px){
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  padding: 30px 0 20px ;
+  font-size: 28px;
+}
+
+.about-inner {
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  font-size: 21px;
+}
+
+.item {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 40px;
+}
+}

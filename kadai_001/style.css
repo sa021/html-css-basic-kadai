@@ -114,10 +114,31 @@ h2 {
   font-size: 28px;
 }
 
-.about-inner {
+.about {
   display: flex;
+  flex-direction: column; /* 縦並びに設定 */
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
 }
+
+  .picture-image {
+    border-radius: 50%;
+    width: 150px; /* 適宜調整 */
+    height: 150px; /* 適宜調整 */
+    margin-bottom: 20px;  /* 画像の下にスペースを追加 */
+  }
+  
+  .contents {
+    text-align: center;   /* 非常に長いテキストのため、中央揃え */
+    padding-top: 20px;
+  }
+
+
+
+
+
 
 nav li {
   margin: 0 10px;

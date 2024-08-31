@@ -7,6 +7,8 @@ body {
   margin: 0px;
   font-family: "Noto Sans JP", sans-serif;
   font-size: 18px;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 
@@ -16,29 +18,24 @@ body {
  justify-content: space-around;
   font-size: 20px;
   font-weight: bold;
-
 }
 
 .header-inner a {
   color: black;
   text-decoration: none;
-  
+  align-items: center;
+  flex-wrap: wrap
 }
 
 
 h1 {
  border: 1px solid black;
-
 }
 
-
 nav li {
-  list-style: none;
   display: inline;
   margin: 0 20px;
   line-height: 70px;
-  
-  
 }
 
 nav a {
@@ -49,7 +46,6 @@ nav a {
 /* メイン画像 */
 img {
   width: 100%;
-  margin: 10px;
 }
 
 /* 真ん中の文字 */
@@ -62,7 +58,7 @@ h2 {
 /* セクションアバウト */
 .about-inner {
   display: flex;
-  margin-left: 300px;
+  justify-content: center;
 }
 
 .name {
@@ -71,7 +67,8 @@ h2 {
 }
 
 .contents {
- margin: 100px;
+  margin: 100px;
+ padding-bottom: 30px;
 }
 
 
@@ -86,7 +83,7 @@ h2 {
   max-width: 960px;
   display: flex;
   margin: 0 auto;
-  
+  flex-wrap: wrap
 } 
 
 .item {
@@ -95,6 +92,13 @@ h2 {
   
 }
 
+.contents {
+margin: 20 auto;
+}
+
+.contents_li {
+  text-align: left;
+}
 
 
 /* フッター */
@@ -103,9 +107,25 @@ footer p {
   padding-bottom: 20px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* スマホ用スタイル */
 @media (max-width: 767px){
-h1 {
+
+  h1 {
   font-size: 28px;
 }
 
@@ -114,43 +134,76 @@ h2 {
   font-size: 28px;
 }
 
+
+nav a {
+  font-size: 10px;
+}
+
+
 .about {
   display: flex;
   flex-direction: column; /* 縦並びに設定 */
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 20px;
+  padding: 0;
 }
 
-  .picture-image {
-    border-radius: 50%;
-    width: 150px; /* 適宜調整 */
-    height: 150px; /* 適宜調整 */
-    margin-bottom: 20px;  /* 画像の下にスペースを追加 */
-  }
-  
-  .contents {
-    text-align: center;   /* 非常に長いテキストのため、中央揃え */
-    padding-top: 20px;
+.about-inner {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 600px;
   }
 
+.picture {
+border-radius: 50%;
+width: 150px; /* 適宜調整 */
+height: 150px; /* 適宜調整 */
+margin-bottom: 20px;  /* 画像の下にスペースを追加 */
+  }
 
-
-
-
+content {
+  margin: 0 0 0 0;
+}
 
 nav li {
-  margin: 0 10px;
+  margin: 0 18px;
 }
 
 nav a {
-  font-size: 21px;
+  font-size: 34px;
 }
+
 
 .item {
   width: 100%;
   text-align: center;
   padding-bottom: 40px;
 }
+
+.about {
+  display: flex;
+  flex-direction: column; /* 縦並びに設定 */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.about-inner {
+  max-width: 600px;
+  width: 100%;
+
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 150px; /* 適宜調整 */
+  height: 150px; /* 適宜調整 */
+  margin-bottom: 20px;  /* 画像の下にスペースを追加 */
+}
+
+
+
+
+
 }

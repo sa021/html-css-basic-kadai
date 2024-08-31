@@ -83,7 +83,8 @@ h2 {
   max-width: 960px;
   display: flex;
   margin: 0 auto;
-  flex-wrap: wrap
+  justify-content: center; 
+  gap: 20px; 
 } 
 
 .item {
@@ -201,9 +202,6 @@ nav a {
   height: 150px; /* 適宜調整 */
   margin-bottom: 20px;  /* 画像の下にスペースを追加 */
 }
-
-
-
 
 
 }
